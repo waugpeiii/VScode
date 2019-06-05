@@ -1,0 +1,138 @@
+{"latex-workshop.latex.tools": [
+  {
+      "name": "xelatex",
+      "command": "xelatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ]
+    },
+{
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ]
+  },
+  {
+      "name": "biber",
+      "command": "biber",
+      "args": [
+        "%DOCFILE%"
+    ]
+  },
+  {
+    "name": "latexmk",
+    "command": "latexmk",
+    "args": [
+    "-synctex=1",
+    "-interaction=nonstopmode",
+    "-file-line-error",
+    "-pdf",
+    "%DOC%"
+    ]
+  }
+],
+"latex-workshop.latex.recipes": [
+  {
+    "name": "XeLaTeX",
+    "tools": [
+      "xelatex"
+    ]
+  },
+  {
+    "name": "xelatex -> biber -> xelatex*2",
+    "tools": [
+      "xelatex",
+      "biber",
+      "xelatex",
+      "xelatex"
+    ]
+  },
+  {
+    "name": "PDFLaTeX",
+    "tools": [
+      "pdflatex"
+    ]
+  },
+
+  {
+    "name": "latexmk",
+    "tools": [
+      "latexmk"
+    ]
+  },
+  {
+    "name": "Biber",
+    "tools": [
+      "biber"
+    ]
+  },
+  {
+    "name": "pdflatex -> bibtex -> pdflatex*2",
+    "tools": [
+      "pdflatex",
+      "bibtex",
+      "pdflatex",
+      "pdflatex"
+    ]
+  },
+  
+],
+"latex-workshop.view.pdf.viewer": "external",
+"latex-workshop.view.pdf.external.command": {
+    "command": "C:/Program Files/SumatraPDF/SumatraPDF.exe",  //SumatraPDF.exe的实际路径
+    "args": [
+        "%PDF%"
+    ]
+},
+"latex-workshop.latex.autoBuild.run": "never",
+"latex-workshop.showContextMenu":true,
+"latex-workshop.view.pdf.external.synctex": {
+  "command": "C:/Program Files/SumatraPDF/SumatraPDF.exe",  //SumatraPDF.exe的实际路径
+  "args": [
+      "-forward-search",
+      "%TEX%",
+      "%LINE%",
+      "%PDF%"
+  ]
+},
+"html.format.wrapLineLength": 0,
+"editor.wordWrap": "on",
+"workbench.colorTheme": "Monokai",
+"explorer.confirmDelete": false,
+"latex-workshop.latex.autoClean.run": "onBuilt",
+"window.menuBarVisibility": "default",
+"workbench.statusBar.visible": true,
+"workbench.activityBar.visible": true,
+// 设置注释行代码的颜色
+"editor.tokenColorCustomizations": {
+  "comments": "#72eb10",
+  // "variables": "#154de6"    
+},
+//设置用户选中代码段的显示的高亮颜色
+"workbench.colorCustomizations": {
+  "editor.selectionBackground": "#e61654"
+},
+"atomKeymap.promptV3Features": true,
+"editor.multiCursorModifier": "ctrlCmd",
+"editor.formatOnPaste": true,
+"editor.autoClosingBrackets": "always",
+"editor.find.autoFindInSelection": true,
+"editor.minimap.maxColumn": 40,
+"sync.gist": " 90440cc1e0552604c23bbe5bed29d193cfed5681",
+"editor.tabCompletion": "on",
+"editor.minimap.enabled": false,
+"workbench.statusBar.feedback.visible": false,
+"extensions.autoUpdate": false,
+"extensions.autoCheckUpdates": false,
+"extensions.ignoreRecommendations": true,
+"extensions.showRecommendationsOnlyOnDemand": true,
+"latex-workshop.synctex.afterBuild.enabled": true,
+
+}
