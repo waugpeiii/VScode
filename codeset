@@ -125,7 +125,6 @@
 "editor.autoClosingBrackets": "always",
 "editor.find.autoFindInSelection": true,
 "editor.minimap.maxColumn": 40,
-"sync.gist": " 90440cc1e0552604c23bbe5bed29d193cfed5681",
 "editor.tabCompletion": "on",
 "editor.minimap.enabled": false,
 "workbench.statusBar.feedback.visible": false,
